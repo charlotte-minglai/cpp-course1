@@ -1,6 +1,15 @@
-# 高级语言程序设计（C++语言）实验
+# 高级语言程序设计（C++语言）作业仓库
 
-2026—2027 学年第一学期《高级语言程序设计(C++语言)》课程实验仓库。
+2026—2027 学年第一学期《高级语言程序设计(C++语言)》课程实验作业。
+
+## 作业入口
+
+| 作业 | 文件夹 | 主题 | 源码 | 实验报告 |
+| --- | --- | --- | --- | --- |
+| 作业1（第一次） | [work1/](work1) | C++ 简单程序设计 | [work1/src](work1/src) | [docx](work1/report/2025302183225_徐维鑫_第一次实验报告.docx) / [PDF](work1/report/2025302183225_徐维鑫_第一次实验报告.pdf) |
+| 作业2（第二次） | [work2/](work2) | 函数的使用与 IDE 调试 | [work2/src](work2/src) | [docx](work2/report/2025302183225_徐维鑫_第二次实验报告.docx) / [PDF](work2/report/2025302183225_徐维鑫_第二次实验报告.pdf) |
+
+根目录的 `README.md` 是本说明；`.vscode/` 是 VSCode 编译与调试配置（作业2 的 IDE 调试使用）；`.gitignore` 是 Git 忽略规则，防止提交 `.exe` 等临时文件。它们都不是作业内容，两次作业分别在 `work1/` 和 `work2/`。
 
 | 项目 | 内容 |
 | --- | --- |
@@ -12,14 +21,7 @@
 
 仓库地址：<https://github.com/charlotte-minglai/cpp-course1>
 
-## 实验列表
-
-| 实验 | 主题 | 源码 | 实验报告 |
-| --- | --- | --- | --- |
-| 第一次 | C++ 简单程序设计 | [work1/src](work1/src) | [docx](work1/report/2025302183225_徐维鑫_第一次实验报告.docx) / [PDF](work1/report/2025302183225_徐维鑫_第一次实验报告.pdf) |
-| 第二次 | 函数的使用与 IDE 调试 | [work2/src](work2/src) | [docx](work2/report/2025302183225_徐维鑫_第二次实验报告.docx) / [PDF](work2/report/2025302183225_徐维鑫_第二次实验报告.pdf) |
-
-每个实验目录下的 `README.md` 为该次实验的设计说明（实验目的、任务分解、算法思路、运行结果与总结），`src/` 中每个题目对应一个可独立编译的 `.cpp` 源文件，`screenshots/` 为实际运行截图。
+每个作业目录下的 `README.md` 为该次实验的设计说明（实验目的、任务分解、算法思路、运行结果与总结），`src/` 中每个题目对应一个可独立编译的 `.cpp` 源文件，`screenshots/` 为实际运行截图。
 
 ## 目录结构
 
@@ -29,7 +31,7 @@ cpp-course1/
 ├── .gitignore
 ├── .vscode/                      # VSCode 构建与 gdb 调试配置
 ├── work1/
-│   ├── README.md                 # 实验一设计说明
+│   ├── README.md                 # 作业1设计说明
 │   ├── src/
 │   │   ├── 01_basic_types/       # 练习一：基本数据类型（9 个程序）
 │   │   ├── 02_operators/         # 练习二：算术与赋值运算符（2 个程序）
@@ -38,7 +40,7 @@ cpp-course1/
 │   ├── screenshots/              # 运行结果截图
 │   └── report/                   # 实验报告 docx / pdf
 └── work2/
-    ├── README.md                 # 实验二设计说明
+    ├── README.md                 # 作业2设计说明
     ├── src/
     │   ├── 01_function_basics/   # 练习一：函数定义、声明与调用（4 个程序）
     │   ├── 02_parameters/        # 练习二：参数传递、默认参数、重载（4 个程序）
