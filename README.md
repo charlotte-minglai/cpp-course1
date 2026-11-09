@@ -17,6 +17,7 @@
 | 实验 | 主题 | 源码 | 实验报告 |
 | --- | --- | --- | --- |
 | 第一次 | C++ 简单程序设计 | [lab01/src](lab01/src) | [docx](lab01/report/2025302183225_徐维鑫_第一次实验报告.docx) / [PDF](lab01/report/2025302183225_徐维鑫_第一次实验报告.pdf) |
+| 第二次 | 函数的使用与 IDE 调试 | [lab02/src](lab02/src) | [docx](lab02/report/2025302183225_徐维鑫_第二次实验报告.docx) / [PDF](lab02/report/2025302183225_徐维鑫_第二次实验报告.pdf) |
 
 每个实验目录下的 `README.md` 为该次实验的设计说明（实验目的、任务分解、算法思路、运行结果与总结），`src/` 中每个题目对应一个可独立编译的 `.cpp` 源文件，`screenshots/` 为实际运行截图。
 
@@ -26,13 +27,23 @@
 cpp-course1/
 ├── README.md
 ├── .gitignore
-└── lab01/
-    ├── README.md                 # 实验一设计说明
+├── .vscode/                      # VSCode 构建与 gdb 调试配置
+├── lab01/
+│   ├── README.md                 # 实验一设计说明
+│   ├── src/
+│   │   ├── 01_basic_types/       # 练习一：基本数据类型（9 个程序）
+│   │   ├── 02_operators/         # 练习二：算术与赋值运算符（2 个程序）
+│   │   ├── 03_logic_sizeof_bitwise/  # 练习三：关系/逻辑、sizeof、位运算（3 个程序）
+│   │   └── 04_control_flow/      # 练习四：控制结构编程（8 个程序）
+│   ├── screenshots/              # 运行结果截图
+│   └── report/                   # 实验报告 docx / pdf
+└── lab02/
+    ├── README.md                 # 实验二设计说明
     ├── src/
-    │   ├── 01_basic_types/       # 练习一：基本数据类型（9 个程序）
-    │   ├── 02_operators/         # 练习二：算术与赋值运算符（2 个程序）
-    │   ├── 03_logic_sizeof_bitwise/  # 练习三：关系/逻辑、sizeof、位运算（3 个程序）
-    │   └── 04_control_flow/      # 练习四：控制结构编程（8 个程序）
+    │   ├── 01_function_basics/   # 练习一：函数定义、声明与调用（4 个程序）
+    │   ├── 02_parameters/        # 练习二：参数传递、默认参数、重载（4 个程序）
+    │   ├── 03_recursion_scope/   # 练习三：递归与变量作用域（4 个程序）
+    │   └── 04_debug/             # 练习四：IDE 调试（3 个程序）
     ├── screenshots/              # 运行结果截图
     └── report/                   # 实验报告 docx / pdf
 ```
@@ -46,4 +57,15 @@ g++ -std=c++11 -Wall 源文件.cpp -o 程序名.exe
 ./程序名.exe
 ```
 
-全部 22 个源文件均已用该命令编译通过并实际运行。
+lab01 的 22 个与 lab02 的 15 个源文件均已用该命令编译通过并实际运行。
+
+## 在 VSCode 中调试
+
+用 VSCode 打开本仓库，安装 `C/C++` 扩展后：
+
+- 打开某个 `.cpp` 文件，按 `F9` 在行号左侧设置断点；
+- 按 `F5` 选择“g++ 调试当前文件”，会自动编译并启动 gdb；
+- `F10` 逐过程、`F11` 逐语句、`Shift+F11` 跳出函数、`Shift+F5` 停止；
+- 在左侧“变量 → 局部”或“监视”中查看变量值。
+
+`launch.json` 中的 `miDebuggerPath` 默认指向 `D:/mingw64/bin/gdb.exe`，如编译器安装位置不同请自行修改。

@@ -7,8 +7,12 @@
 *.out
 
 # 编辑器
-.vscode/
 .idea/
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/settings.json
 
 # Office 临时文件
 ~$*
