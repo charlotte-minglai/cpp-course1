@@ -16,8 +16,8 @@
 
 | 实验 | 主题 | 源码 | 实验报告 |
 | --- | --- | --- | --- |
-| 第一次 | C++ 简单程序设计 | [lab01/src](lab01/src) | [docx](lab01/report/2025302183225_徐维鑫_第一次实验报告.docx) / [PDF](lab01/report/2025302183225_徐维鑫_第一次实验报告.pdf) |
-| 第二次 | 函数的使用与 IDE 调试 | [lab02/src](lab02/src) | [docx](lab02/report/2025302183225_徐维鑫_第二次实验报告.docx) / [PDF](lab02/report/2025302183225_徐维鑫_第二次实验报告.pdf) |
+| 第一次 | C++ 简单程序设计 | [work1/src](work1/src) | [docx](work1/report/2025302183225_徐维鑫_第一次实验报告.docx) / [PDF](work1/report/2025302183225_徐维鑫_第一次实验报告.pdf) |
+| 第二次 | 函数的使用与 IDE 调试 | [work2/src](work2/src) | [docx](work2/report/2025302183225_徐维鑫_第二次实验报告.docx) / [PDF](work2/report/2025302183225_徐维鑫_第二次实验报告.pdf) |
 
 每个实验目录下的 `README.md` 为该次实验的设计说明（实验目的、任务分解、算法思路、运行结果与总结），`src/` 中每个题目对应一个可独立编译的 `.cpp` 源文件，`screenshots/` 为实际运行截图。
 
@@ -28,7 +28,7 @@ cpp-course1/
 ├── README.md
 ├── .gitignore
 ├── .vscode/                      # VSCode 构建与 gdb 调试配置
-├── lab01/
+├── work1/
 │   ├── README.md                 # 实验一设计说明
 │   ├── src/
 │   │   ├── 01_basic_types/       # 练习一：基本数据类型（9 个程序）
@@ -37,7 +37,7 @@ cpp-course1/
 │   │   └── 04_control_flow/      # 练习四：控制结构编程（8 个程序）
 │   ├── screenshots/              # 运行结果截图
 │   └── report/                   # 实验报告 docx / pdf
-└── lab02/
+└── work2/
     ├── README.md                 # 实验二设计说明
     ├── src/
     │   ├── 01_function_basics/   # 练习一：函数定义、声明与调用（4 个程序）
@@ -57,7 +57,7 @@ g++ -std=c++11 -Wall 源文件.cpp -o 程序名.exe
 ./程序名.exe
 ```
 
-lab01 的 22 个与 lab02 的 15 个源文件均已用该命令编译通过并实际运行。
+work1 的 22 个与 work2 的 15 个源文件均已用该命令编译通过并实际运行。
 
 ## 在 VSCode 中调试
 
